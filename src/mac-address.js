@@ -15,8 +15,7 @@ const { NotImplementedError } = require('../lib');
  *
  */
 function isMAC48Address(/* n */) {
-  // Remove line below and write your code here
-  throw new NotImplementedError('Not implemented');
+  return /^[0-9A-F]{2}(-[0-9A-F]{2}){5}$/.test(n);
 }
 
 module.exports = {
